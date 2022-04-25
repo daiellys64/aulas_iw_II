@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+   <h1>SUA NACIONALIDADE</h1>
+
+   NACIONALIDADE <input type="text" name="txtVel" id="txtVel">
+   <input type="button" value="VERIFICAR" onclick="calcular()">
+   <div id="resultado"></div>
+
+   <script>
+
+    function calcular(){
+       var txtV= document.querySelector('input#txtVel')
+       var res= document.querySelector('div#resultado')
+       var vel='EUA'
+
+        if(vel=='BRA'){
+            res.innerHTML +=`<p>Você é <strong>BRASILEIRO!</strong></p>`
+
+        }
+
+        else{
+            res.innerHTML +=`<p>Você é <strong>ESTRANGEIRO!</strong></p>`
+        }
+    </script>
+ </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var salario = parseInt(prompt('Digite seu salário.'))
+
+        if (salario != 0) {
+            if (salario <= 280) {
+                var salario2 = parseInt(salario * 20) / 100
+                var novosalario = (salario2 + salario)
+                document.write("Seu novo salário é".novosal)
+                //Não apareceu a frase como eu queria
+            } 
+            
+            if (salario > 280 && salario < 700) {
+                var salario2 = parseInt(salario * 15) / 100
+                var novosalario = (salario2 + salario)
+                document.write(novosalario)
+            }
+            if (salario > 700 && salario < 1500) {
+                var salario2 = parseInt(salario * 10) / 100
+                var novosalario = (salario2 + salario)
+                document.write(novosalario)
+            }
+            if (salario >= 1500) {
+                var salario2 = parseInt(salario * 5) / 100
+                var novosalario = (salario2 + salario)
+                document.write(novosalario)
+            }
+        }
+    </script>
+</body>
+</html>
